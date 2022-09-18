@@ -1,0 +1,9 @@
+#messageContainer {
+
+  background-color: rgb(203, 255, 119);
+  flex: auto;
+}
+.messageContainer2 {
+
+    background-color: rgb(255, 67, 67);
+  }

@@ -1,0 +1,108 @@
+html, body {
+  font-family: 'Roboto', sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+#root {
+  height: 100vh;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.joinOuterContainer {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  height: 100vh;
+  align-items: center;
+  background-color: #e1e1e1;
+}
+
+.joinInnerContainer {
+  width: 20%;
+}
+
+.joinInput {
+  border-radius: 0;
+  padding: 15px 20px;
+  width: 100%;
+}
+
+.heading {
+  color: rgb(0, 0, 0);
+  font-size: 3.5em;
+  padding-bottom: 10px;
+  border-bottom: 2px solid white;
+  font-family: 'Roboto', sans-serif;  
+}
+
+.button {
+    color: #fff !important;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: #56c57d;
+    padding: 20px;
+    border-radius: 5px;
+    display: inline-block;
+    border: none;
+    width: 100%;
+
+}
+.button:hover {
+
+    transform: scale(0.9,0.9) rotate(2deg);
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+    animation-duration: 5s;
+     animation-name: menu1;
+    -moz-animation:menu1 5s 1;
+    -webkit-animation:menu1  5s 1;
+    -o-animation:menu1 5s 1;
+    border-radius:5px;
+    -webkit-border-radius:5px;
+    }
+    @keyframes button
+    {
+    0% {transform: rotate(0deg);left:0px;}
+    25% {transform: rotate(20deg);left:300px;}
+    50% {transform: rotate(0deg);left:300px;}
+    55% {transform: rotate(0deg);left:300px;}
+    70% {transform: rotate(20deg);left:300px;}
+    100% {transform: rotate(0deg);left:0px;}
+    }
+  
+    @-webkit-keyframes button
+    {
+    0% {transform: rotate(0deg);left:0px;}
+    25% {transform: rotate(20deg);left:300px;}
+    50% {transform: rotate(0deg);left:300px;}
+    55% {transform: rotate(0deg);left:300px;}
+    70% {transform: rotate(20deg);left:300px;}
+    100% {transform: rotate(0deg);left:0px;}
+    }
+    
+
+
+.mt-20 {
+  margin-top: 20px;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .joinOuterContainer {
+    height: 100%;
+  }
+
+  .joinInnerContainer {
+    width: 90%;
+  }
+
+
+}
+
+button:focus {
+  outline: 0;
+}
+
